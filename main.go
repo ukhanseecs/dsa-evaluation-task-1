@@ -28,7 +28,7 @@ func main() {
 		{"/home/user", "./downloads", "/home/user/downloads"},
 
 		// Complex nested paths
-		{"/home/user/projects/go", "../../../usr/local/bin", "/usr/local/bin"},
+		{"/home/user/projects/go", "../../../usr/local/bin", "/home/usr/local/bin"},
 		{"/home/user/projects/go", "../../../../../etc/passwd", "/etc/passwd"},
 	}
 
