@@ -1,6 +1,7 @@
 # Path Resolver : DSA Evaluation Task 1 
 
 This repository contains the solution code and explanation for DSA evaluation question #1.
+
 ---
 
 ## How It Works
