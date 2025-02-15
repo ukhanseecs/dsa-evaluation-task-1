@@ -26,6 +26,23 @@ go run main.go resolver.go
 The program will execute all test cases and display the results.
 
 
+## Project Structure
+
+```
+dsa-evaluation-task-1/
+├── main.go           # Main program and test cases
+├── resolver.go       # Path resolver implementation
+├── README.md        # Project documentation
+└── go.mod           # Go module file
+```
+
+### Files Overview
+
+- `main.go`: Contains test cases and examples
+- `resolver.go`: Has the main `ResolveAbsolutePath` function
+- `README.md`: Documentation you're reading now
+- `go.mod`: Project dependencies and module info
+
 
 ## How It Works
 
