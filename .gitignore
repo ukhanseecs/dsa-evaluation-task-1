@@ -1,0 +1,19 @@
+# Binaries & Compiled Files
+*.exe
+*.out
+*.o
+*.a
+*.so
+
+# Go Modules & Dependencies
+go.sum
+vendor/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
