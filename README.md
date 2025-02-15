@@ -1,6 +1,7 @@
-# Path Resolver
+# DSA Evaluation Task 1 : Path Resolver
 
-A simple Go package that resolves the absolute path from a given **current directory** and **relative path**. This package processes paths by simulating a **stack-based resolution** of directories, properly handling components like `..`, `.`, and redundant slashes.
+This repository contains the solution code and explanation for DSA evaluation question #2.
+
 
 ---
 
