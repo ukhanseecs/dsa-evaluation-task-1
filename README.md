@@ -12,6 +12,7 @@ To get started with this project, follow these steps:
 ```bash
 git clone https://github.com/ukhanseecs/dsa-evaluation-task-1.git
 cd dsa-evaluation-task-1
+go mod tidy
 ```
 
 2. Run the test cases
