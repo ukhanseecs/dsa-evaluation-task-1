@@ -4,6 +4,29 @@ This repository contains the solution code and explanation for DSA evaluation qu
 
 ---
 
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. Clone the repository
+```bash
+git clone https://github.com/ukhanseecs/dsa-evaluation-task-1.git
+cd dsa-evaluation-task-1
+```
+
+2. Run the test cases
+```bash
+go run .
+```
+or
+```bash
+go run main.go resolver.go
+```
+
+The program will execute all test cases and display the results.
+
+
+
 ## How It Works
 
 ### Simple Explanation
@@ -45,24 +68,3 @@ Step-by-step:
 5. Build path: "/" + join with "/" = "/home/pictures"
 ```
 
-
-## Getting Started
-
-To get started with this project, follow these steps:
-
-1. Clone the repository
-```bash
-git clone https://github.com/ukhanseecs/dsa-evaluation-task-1.git
-cd dsa-evaluation-task-1
-```
-
-2. Run the test cases
-```bash
-go run .
-```
-or
-```bash
-go run main.go resolver.go
-```
-
-The program will execute all test cases and display the results.
