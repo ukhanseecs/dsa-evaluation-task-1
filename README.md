@@ -1,4 +1,3 @@
-
 # Path Resolver
 
 A simple Go package that resolves the absolute path from a given **current directory** and **relative path**. This package processes paths by simulating a **stack-based resolution** of directories, properly handling components like `..`, `.`, and redundant slashes.
@@ -9,7 +8,7 @@ A simple Go package that resolves the absolute path from a given **current direc
 
 ### Simple Explanation
 
-The `ResolveAbsolutePath` function works like following a set of navigation instructions on a path, using a stack (like a pile of cards) to keep track of where we are. Here's how it works:
+The `ResolveAbsolutePath` function works by using a stack to keep track of where we are. Here's how it works:
 
 1. **Starting Point**: 
    - We start with an empty stack
@@ -47,33 +46,29 @@ Step-by-step:
 ```
 
 
-## Features
-
-- **Resolves absolute path** from a given current directory and relative path.
-- Correctly handles:
-  - `.` (current directory).
-  - `..` (parent directory).
-  - Redundant slashes (`///`).
-  - Root directory (`/`).
-- **No external libraries** used—pure Go implementation.
-
----
-
 ## Getting Started
 
-To use the `ResolveAbsolutePath` function, you need to include it in your Go project. Follow these steps to get started:
+### What You Need
+- Go installed on your computer (version 1.16 or newer)
 
-### Prerequisites
+### Quick Setup
+1. Add this code to your project:
+   - Download the repository, or
+   - Copy the `path_resolver.go` file into your project
 
-- Go version 1.16 or higher.
-
-### Installation
-
-1. Clone this repository or copy the code into your Go project.
-2. Import the `ResolveAbsolutePath` function into your main Go file.
-
+2. Use it in your code:
 ```go
-import "path_resolver"
+package main
+
+import (
+    "fmt"
+    "path_resolver"  // Import the package
+)
+
+func main() {
+    result := path_resolver.ResolveAbsolutePath("/home", "documents")
+    fmt.Println(result)  // Prints: /home/documents
+}
 ```
 
 ---
