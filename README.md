@@ -1,8 +1,6 @@
 # DSA Evaluation Task 1 : Path Resolver
 
-This repository contains the solution code and explanation for DSA evaluation question #2.
-
-
+This repository contains the solution code and explanation for DSA evaluation question #1.
 ---
 
 ## How It Works
@@ -49,121 +47,21 @@ Step-by-step:
 
 ## Getting Started
 
-### What You Need
-- Go installed on your computer (version 1.16 or newer)
+To get started with this project, follow these steps:
 
-### Quick Setup
-1. Add this code to your project:
-   - Download the repository, or
-   - Copy the `path_resolver.go` file into your project
-
-2. Use it in your code:
-```go
-package main
-
-import (
-    "fmt"
-    "path_resolver"  // Import the package
-)
-
-func main() {
-    result := path_resolver.ResolveAbsolutePath("/home", "documents")
-    fmt.Println(result)  // Prints: /home/documents
-}
+1. Clone the repository
+```bash
+git clone https://github.com/ukhanseecs/dsa-evaluation-task-1.git
+cd dsa-evaluation-task-1
 ```
 
----
-
-## Usage
-
-### Example
-
-```go
-package main
-
-import (
-	"fmt"
-	"path_resolver"
-)
-
-func main() {
-	// Test cases
-	currentDir := "/home/user"
-	relativePath := "documents"
-	absolutePath := path_resolver.ResolveAbsolutePath(currentDir, relativePath)
-	fmt.Println("Resolved Absolute Path:", absolutePath)
-}
+2. Run the test cases
+```bash
+go run .
+```
+or
+```bash
+go run main.go resolver.go
 ```
 
-### Function Signature
-
-```go
-func ResolveAbsolutePath(currentDir string, relativePath string) string
-```
-
-### Parameters
-- `currentDir`: The **current directory** (absolute path).
-- `relativePath`: The **relative path** to resolve from the `currentDir`.
-
-### Returns
-- A **string** representing the resolved absolute path.
-
----
-
-## Example Walkthrough
-
-### Test Case 1: Resolving `/home/user` and `documents`
-
-```go
-currentDir := "/home/user"
-relativePath := "documents"
-result := ResolveAbsolutePath(currentDir, relativePath)
-fmt.Println(result) // Output: "/home/user/documents"
-```
-
-### Test Case 2: Resolving `/usr/local/bin` and `../../etc/config`
-
-```go
-currentDir := "/usr/local/bin"
-relativePath := "../../etc/config"
-result := ResolveAbsolutePath(currentDir, relativePath)
-fmt.Println(result) // Output: "/usr/etc/config"
-```
-
-### Test Case 3: Resolving `/home/user/docs` and `../images`
-
-```go
-currentDir := "/home/user/docs"
-relativePath := "../images"
-result := ResolveAbsolutePath(currentDir, relativePath)
-fmt.Println(result) // Output: "/home/user/images"
-```
-
----
-
-## Edge Cases
-
-- **Relative Path Points Above Root:**
-  - Example: `ResolveAbsolutePath("/home", "../../../etc")` → `/etc`
-- **Multiple Redundant Slashes:**
-  - Example: `ResolveAbsolutePath("/home//user///docs", "images")` → `/home/user/docs/images`
-- **Path Starts with `.` or `..`:**
-  - Example: `ResolveAbsolutePath("/home/user", "../../admin")` → `/home/admin`
-
----
-
-## Contributing
-
-Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-## Acknowledgments
-
-- Thanks to the Go community for providing great resources and documentation.
+The program will execute all test cases and display the results.
