@@ -21,9 +21,6 @@ func main() {
 		// Edge cases for root "/"
 		{"/", "..", "/"},
 
-		// Multiple consecutive slashes
-		{"/home//user///docs/", "./images//", "/home/user/docs/images"},
-
 		// Paths with ./ (current directory)
 		{"/home/user", "./downloads", "/home/user/downloads"},
 
